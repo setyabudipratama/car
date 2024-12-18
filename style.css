@@ -330,7 +330,7 @@ header .content .left .fa-caret-down {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url('gambar/brake.JPG') no-repeat center center/cover;
+    background: url('gambar/brake.jpg') no-repeat center center/cover;
     background-color: rgba(0, 0, 0, 0.5);
     background-blend-mode: multiply;
 }
@@ -845,17 +845,13 @@ footer .sosial i {
     #motorsport .container .gallery .card {
         min-width: 50px;
         height: 150px;
-        margin: 0;
+        margin: 0 2px;
         flex: 0 0 50px;
     }
 
     #motorsport .container .gallery .card .card-body {
         font-size: 0.6rem;
     }
-
-    /* #motorsport .container .gallery .card:nth-child(3) {
-        display: none;
-    } */
 
     #motorsport .container .desc h3 {
         position: relative;
