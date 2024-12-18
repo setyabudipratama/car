@@ -1,0 +1,951 @@
+:root {
+    --white: #f5f5f5;
+    --black: #151515;
+    --darkgrey: #333333;
+    --grey: grey;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* border: 1px dotted var(--black); */
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* halaman header */
+header {
+    width: 100%;
+    height: 100vh;
+    background: url('gambar/BMW\ M8.jpg') no-repeat center center/cover;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* tag nav */
+header nav {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 5%;
+    border: 2px solid var(--white);
+    background: transparent;
+    backdrop-filter: blur(10px);
+    border-radius: 50px;
+    z-index: 1000;
+}
+
+/* class fa-bars-staggered */
+header nav .fa-bars-staggered {
+    display: none;
+}
+
+/* tag ul */
+header nav ul {
+    width: 80%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+/* class li */
+header nav li {
+    list-style: none;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: var(--white);
+}
+
+header nav li:first-child:hover,
+header nav li:nth-child(2):hover,
+header nav li:nth-child(4):hover,
+header nav li:nth-child(5):hover {
+    color: var(--black);
+    transform: scale(1.1);
+}
+
+header nav .logo {
+    display: none;
+}
+
+/* class logo */
+header nav .logo2 {
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* class content */
+header .content {
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 5%;
+    display: flex;
+}
+
+/* class left */
+header .content .left {
+    width: 50%;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* tag h2 */
+header .content .left h2 {
+    font-size: 1.1rem;
+    color: var(--white);
+    font-family: pacifico;
+    font-weight: normal;
+    text-align: center;
+    cursor: default;
+    position: relative;
+    top: 30%;
+    width: 90%;
+}
+
+/* tag button */
+header .content .left button {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    cursor: pointer;
+    border: 2px solid var(--white);
+    position: relative;
+    top: 38%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    color: var(--white);
+}
+
+header .content .left button:hover {
+    background: var(--darkgrey);
+    color: var(--white);
+    border: 2px solid var(--white);
+    transform: scale(1.1);
+}
+
+header .content .left span {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    position: relative;
+    top: 10%;
+}
+
+header .content .left .fa-caret-down {
+    font-size: 2rem;
+    position: relative;
+    top: 10%;
+}
+
+
+/* halaman suspension */
+#suspension {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('gambar/suspensi.jpg') no-repeat center center/cover;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
+}
+
+/* class container */
+#suspension .container {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* tag h2 */
+#suspension .container h2 {
+    font-family: pacifico;
+    font-weight: normal;
+    position: relative;
+    top: 18%;
+    color: var(--white);
+    cursor: default;
+    text-transform: capitalize;
+}
+
+/* class content */
+#suspension .container .content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* class desc dan image */
+#suspension .container .content .desc,
+#suspension .container .content .image {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* tag p */
+#suspension .container .content .desc p {
+    font-size: 0.9rem;
+    width: 80%;
+    height: 50%;
+    color: var(--white);
+    text-align: justify;
+    cursor: default;
+    position: relative;
+    top: 10%;
+}
+
+/* class image */
+#suspension .container .content .image {
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+}
+
+/* tag img */
+#suspension .container .content .image img {
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+}
+
+
+/* halaman engine */
+#engine {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('gambar/engine.jpg') no-repeat center center/cover;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
+}
+
+/* class container */
+#engine .container {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* tag h2 */
+#engine .container h2 {
+    font-family: pacifico;
+    font-weight: normal;
+    position: relative;
+    top: 18%;
+    color: var(--white);
+    cursor: default;
+    text-transform: capitalize;
+}
+
+/* class content */
+#engine .container .content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* class desc dan image */
+#engine .container .content .image,
+#engine .container .content .desc {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* class image */
+#engine .container .content .image {
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+}
+
+/* tag img */
+#engine .container .content .image img {
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+}
+
+
+/* tag p */
+#engine .container .content .desc p {
+    font-size: 0.9rem;
+    width: 80%;
+    height: 50%;
+    color: var(--white);
+    text-align: justify;
+    cursor: default;
+    position: relative;
+    top: 10%;
+}
+
+
+/* halaman brake */
+#brake {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('gambar/brake.JPG') no-repeat center center/cover;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
+}
+
+/* class container */
+#brake .container {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* tag h2 */
+#brake .container h2 {
+    font-family: pacifico;
+    font-weight: normal;
+    position: relative;
+    top: 18%;
+    color: var(--white);
+    cursor: default;
+    text-transform: capitalize;
+}
+
+/* class content */
+#brake .container .content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* class desc dan image */
+#brake .container .content .desc,
+#brake .container .content .image {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* tag p */
+#brake .container .content .desc p {
+    font-size: 0.9rem;
+    width: 80%;
+    height: 50%;
+    color: var(--white);
+    text-align: justify;
+    cursor: default;
+    position: relative;
+    top: 10%;
+}
+
+/* class image */
+#brake .container .content .image {
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+}
+
+/* tag img */
+#brake .container .content .image img {
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+}
+
+
+/* halaman motorsport */
+#motorsport {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(135deg, var(--grey) 0%, var(--darkgrey) 50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* class container */
+#motorsport .container {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* tag h2 */
+#motorsport .container h2 {
+    font-family: pacifico;
+    font-weight: normal;
+    color: var(--white);
+    position: relative;
+    top: 10%;
+    cursor: default;
+    text-transform: capitalize;
+}
+
+/* class gallery */
+#motorsport .container .gallery {
+    width: 80%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 5%;
+}
+
+/* class card */
+#motorsport .container .gallery .card {
+    width: 150px;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 0 5px;
+    flex: 0 0 150px;
+    transition: flex-grow 0.8s ease;
+}
+
+#motorsport .container .gallery .card:hover {
+    flex-grow: 2;
+}
+
+/* tag img */
+#motorsport .container .gallery .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50px;
+    transition: all 0.8s ease;
+    filter: brightness(0.5);
+}
+
+#motorsport .container .gallery .card:hover img {
+    filter: brightness(1);
+    border-radius: 20px;
+}
+
+/* class card-body */
+#motorsport .container .gallery .card .card-body {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: var(--white);
+    transition: opacity 0.5s ease;
+}
+
+#motorsport .container .gallery .card:hover .card-body {
+    opacity: 0;
+}
+
+/* class desc */
+#motorsport .container .desc {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* tag h3 */
+#motorsport .container .desc h3 {
+    font-size: 1rem;
+    color: var(--white);
+    cursor: default;
+}
+
+/* tag p */
+#motorsport .container .desc p {
+    font-size: 0.9rem;
+    text-align: justify;
+    color: var(--white);
+    cursor: default;
+}
+
+/* halaman footer */
+footer {
+    position: relative;
+    top: 0;
+    width: 100%;
+    min-height: 10vh;
+    background-color: var(--darkgrey);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* class cipta */
+footer .cipta {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 5px;
+    margin: 0;
+    padding-top: 5px;
+}
+
+/* tag h5 */
+footer .cipta h5 {
+    margin: 0;
+    font-size: 1rem;
+    color: var(--white);
+    cursor: default;
+}
+
+/* tag img */
+footer .cipta img {
+    position: relative;
+    top: 0;
+    width: 50px;
+    height: 50px;
+    margin: 0;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+/* class contact */
+footer .contact {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    color: var(--white);
+}
+
+/* tag h2 */
+footer .contact h2 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--white);
+    cursor: default;
+}
+
+/* tag span */
+footer .contact span {
+    margin: 0;
+    font-size: 0.8rem;
+    color: var(--white);
+    cursor: default;
+}
+
+/* tag i */
+footer .contact i {
+    font-size: 1.2rem;
+    margin-right: 3px;
+    color: var(--white);
+}
+
+/* class sosial */
+footer .sosial {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+/* tag h2 */
+footer .sosial h2 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--white);
+    cursor: default;
+}
+
+/* tag span */
+footer .sosial span {
+    margin: 0;
+    font-size: 0.8rem;
+    color: var(--white);
+    cursor: default;
+}
+
+/* tag i */
+footer .sosial i {
+    font-size: 1.2rem;
+    margin-right: 3px;
+    color: var(--white);
+}
+
+
+@media only screen and (max-width: 767px) {
+
+    header nav {
+        width: 80%;
+        height: 7vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 5%;
+        border: 2px solid var(--white);
+        background: transparent;
+        backdrop-filter: blur(10px);
+        border-radius: 50px;
+        z-index: 1000;
+    }
+
+    /* aktif saat responsive */
+    header nav .fa-bars-staggered {
+        display: block;
+        font-size: 1.5rem;
+        position: relative;
+        top: 2%;
+        left: 40%;
+        right: 10%;
+        z-index: 1000;
+        color: var(--white);
+    }
+
+    header nav .fa-bars-staggered {
+        transition: transform 0.3s ease;
+    }
+
+    .fa-x {
+        transform: rotate(90deg);
+    }
+
+    header nav ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 5px;
+        background-color: var(--darkgrey);
+        border-radius: 20px;
+        border: 2px solid var(--white);
+        height: auto;
+        padding: 5px;
+        transition: all 0.3s ease;
+        opacity: 0;
+        position: fixed;
+        top: 0;
+    }
+
+    /* fungsi di javascript */
+    header nav ul.active {
+        opacity: 1;
+        top: 50px;
+    }
+
+    header nav ul li {
+        font-size: 0.9rem;
+    }
+
+    header nav ul li:nth-child(4) {
+        position: relative;
+        top: -2px;
+    }
+
+    header nav .logo {
+        display: block;
+        width: 40px;
+        height: 40px;
+        object-fit: cover;
+        border-radius: 50%;
+        position: fixed;
+        top: 10%;
+        left: 3%;
+        z-index: 1000;
+    }
+
+    header nav ul li .logo2 {
+        display: none;
+    }
+
+    header .content .left {
+        width: 70%;
+    }
+
+    header .content .left h2 {
+        position: relative;
+        top: -10%;
+        font-size: 1rem;
+    }
+
+    header .content .left button {
+        width: 90px;
+        height: 90px;
+        font-size: 0.6rem;
+        top: -5%;
+    }
+
+    header .content .left span {
+        font-size: 1.2em;
+        text-transform: uppercase;
+        position: relative;
+        top: 10%;
+    }
+    
+    header .content .left .fa-caret-down {
+        font-size: 2rem;
+        position: relative;
+        top: 10%;
+    }
+
+    #suspension .container h2 {
+        position: relative;
+        top: 5%;
+    }
+
+    #suspension .container .content .desc,
+    #suspension .container .content .image {
+        width: 100%;
+        height: auto;
+    }
+
+    #suspension .container .content .desc {
+        position: relative;
+        top: 5%;
+    }
+
+    #suspension .container .content .desc p {
+        font-size: 0.8rem;
+        width: 90%;
+        height: 40vh;
+        position: relative;
+        top: 50px;
+    }
+
+    #suspension .container .content .image img {
+        width: 200px;
+        height: 150px;
+        object-fit: cover;
+        position: relative;
+        top: -50px;
+    }
+
+    #engine .container h2 {
+        position: relative;
+        top: 5%;
+    }
+
+    #engine .container .content .image,
+    #engine .container .content .desc {
+        width: 100%;
+        height: auto;
+    }
+
+    #engine .container .content .image img {
+        width: 200px;
+        height: 150px;
+        object-fit: cover;
+        position: relative;
+        top: 50px;
+    }
+
+    #engine .container .content .desc {
+        position: relative;
+        top: 5%;
+    }
+
+    #engine .container .content .desc p {
+        font-size: 0.8rem;
+        width: 90%;
+        height: 40vh;
+    }
+
+    #brake .container h2 {
+        position: relative;
+        top: 5%;
+    }
+
+    #brake .container .content .desc,
+    #brake .container .content .image {
+        width: 100%;
+        height: auto;
+    }
+
+    #brake .container .content .desc {
+        position: relative;
+        top: 5%;
+    }
+
+    #brake .container .content .desc p {
+        font-size: 0.8rem;
+        width: 90%;
+        height: 40vh;
+        position: relative;
+        top: 50px;
+    }
+
+    #brake .container .content .image img {
+        width: 200px;
+        height: 150px;
+        object-fit: cover;
+        position: relative;
+        top: -50px;
+    }
+
+    #motorsport .container h2 {
+        top: 10%;
+    }
+
+    #motorsport .container .gallery {
+        width: 42vh;
+    }
+
+    #motorsport .container .gallery .card {
+        min-width: 50px;
+        height: 150px;
+        margin: 0;
+        flex: 0 0 50px;
+    }
+
+    #motorsport .container .gallery .card .card-body {
+        font-size: 0.6rem;
+    }
+
+    /* #motorsport .container .gallery .card:nth-child(3) {
+        display: none;
+    } */
+
+    #motorsport .container .desc h3 {
+        position: relative;
+        top: -20%;
+    }
+
+    footer {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+
+    footer .cipta {
+        width: 40%;
+    }
+
+    footer .cipta img {
+        width: 40px;
+        height: 40px;
+    }
+
+    footer .cipta h5 {
+        font-size: 0.6rem;
+    }
+
+    footer .contact i,
+    footer .sosial i {
+        font-size: 1rem;
+    }
+
+    footer .contact,
+    footer .sosial {
+        gap: 0;
+        margin: 0;
+        width: 35%;
+    }
+
+    footer span {
+        font-size: 0.6rem;
+    }
+}
+
+@media (min-width: 767px) and (max-width: 1024px) {
+
+    #suspension .container .content .desc,
+    #suspension .container .content .image {
+        width: 100%;
+        height: auto;
+    }
+
+    #suspension .container .content .desc {
+        position: relative;
+        top: 15%;
+    }
+
+    #suspension .container .content .desc p,
+    #engine .container .content .desc p,
+    #brake .container .content .desc p {
+        font-size: 0.8rem;
+        width: 90%;
+        height: 40vh;
+        position: relative;
+        top: 180px;
+    }
+
+    #motorsport .container h2 {
+        top: 20%;
+    }
+
+    #motorsport .container .gallery {
+        width: 65vh;
+    }
+
+    #motorsport .container .gallery .card {
+        min-width: 120px;
+        height: 280px;
+        margin: 0;
+        flex: 0 0 120px;
+    }
+
+    #motorsport .container .desc h3 {
+        position: relative;
+        top: -100%;
+    }
+    
+    #motorsport .container .desc p {
+        position: relative;
+        top: -70%;
+    }
+}
