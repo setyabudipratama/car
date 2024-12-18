@@ -740,9 +740,11 @@ footer .sosial i {
         top: 10%;
     }
 
-    #suspension .container h2 {
+    #suspension .container h2,
+    #engine .container h2,
+    #brake .container h2 {
         position: relative;
-        top: 5%;
+        top: 15%;
     }
 
     #suspension .container .content .desc,
@@ -751,7 +753,11 @@ footer .sosial i {
         height: auto;
     }
 
-    #suspension .container .content .desc {
+    #suspension .container .content .desc,
+    #engine .container .content .desc,
+    #brake .container .content .desc {
+        width: 100%;
+        height: auto;
         position: relative;
         top: 5%;
     }
@@ -772,11 +778,6 @@ footer .sosial i {
         top: -50px;
     }
 
-    #engine .container h2 {
-        position: relative;
-        top: 5%;
-    }
-
     #engine .container .content .image,
     #engine .container .content .desc {
         width: 100%;
@@ -788,12 +789,7 @@ footer .sosial i {
         height: 150px;
         object-fit: cover;
         position: relative;
-        top: 50px;
-    }
-
-    #engine .container .content .desc {
-        position: relative;
-        top: 5%;
+        top: 70px;
     }
 
     #engine .container .content .desc p {
@@ -802,20 +798,10 @@ footer .sosial i {
         height: 40vh;
     }
 
-    #brake .container h2 {
-        position: relative;
-        top: 5%;
-    }
-
     #brake .container .content .desc,
     #brake .container .content .image {
         width: 100%;
         height: auto;
-    }
-
-    #brake .container .content .desc {
-        position: relative;
-        top: 5%;
     }
 
     #brake .container .content .desc p {
